@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@law-ui/*": ["./packages/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"]
+}

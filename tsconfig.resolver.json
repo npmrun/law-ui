@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "esModuleInterop": true,
+        "declaration": true,
+        "outDir": "dist/law-ui",
+        "declarationDir": "dist/law-ui",
+        "skipLibCheck": true
+    },
+    "include": ["resolver.ts"],
+    "exclude": ["node_modules", "dist"]
+}

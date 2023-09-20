@@ -1,0 +1,31 @@
+{
+  "private": "true",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm -C docs build",
+    "build:lib": "somebuild build",
+    "build:pkg": "node scripts/build.js",
+    "build:resolver": "tsc -p ./tsconfig.resolver.json",
+    "build": "run-s build:lib build:resolver build:pkg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@law-ui/components": "workspace:*",
+    "@law-ui/hooks": "workspace:*",
+    "@law-ui/theme-chalk": "workspace:*",
+    "@somebuild/build-components-vue3": "^0.0.14",
+    "npm-run-all": "^4.1.5",
+    "somebuild": "^0.0.12",
+    "typescript": "^5.2.2",
+    "unplugin-vue-components": "0.21.2",
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  }
+}
