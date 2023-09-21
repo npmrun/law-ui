@@ -6,6 +6,7 @@ export default defineRootConfig({
     'components-vue3': {
         outDir: './dist/law-ui',
         name: 'law-ui',
+        prefix: "law",
         pkgRoot: "packages",
         themeRoot: "theme-chalk",
         'build-type': EBuildType.ElementPlus,

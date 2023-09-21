@@ -1,10 +1,4 @@
-import type { AppContext, Plugin } from 'vue'
-
-export type SFCWithInstall<T> = T & Plugin
-
-export type SFCInstallWithContext<T> = SFCWithInstall<T> & {
-    _context: AppContext | null
-}
+import type { SFCWithInstall } from '@law-ui/utils/types'
 
 export const withInstall = <T, E extends Record<string, any>>(
     main: T,

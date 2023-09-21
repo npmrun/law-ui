@@ -19,6 +19,7 @@
     "@law-ui/hooks": "workspace:*",
     "@law-ui/theme-chalk": "workspace:*",
     "@somebuild/build-components-vue3": "^0.0.14",
+    "ant-design-vue": "^3.2.20",
     "npm-run-all": "^4.1.5",
     "somebuild": "^0.0.12",
     "typescript": "^5.2.2",
@@ -26,6 +27,7 @@
     "vue": "^3.3.4"
   },
   "peerDependencies": {
-    "vue": ">=3.0.0"
+    "vue": "3",
+    "ant-design-vue": "3"
   }
 }

@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'somebuild',
-    description: '集合网络上的构建工具，针对性构建不同的东西',
+    title: 'LAW-UI',
+    description: '基于ant-design-vue，构建符合业务的组件',
     lastUpdated: true,
     lang: "zh",
     markdown: {

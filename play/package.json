@@ -13,6 +13,7 @@
     "@pnpm/types": "^9.2.0",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "ant-design-vue": "^3.2.20",
     "sass": "^1.67.0",
     "unplugin-vue-components": "0.25.2",
     "vite": "^4.4.9",

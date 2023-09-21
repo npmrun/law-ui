@@ -1,4 +1,4 @@
-const noStylesComponents = ['ElAutoResizer']
+const noStylesComponents = []
 
 export default (options): any => {
     let optionsResolved
@@ -38,17 +38,10 @@ function resolveComponent(name: string, options): any {
     if (options.exclude && name.match(options.exclude))
         return
 
-    if (!name.match(/^El[A-Z]/))
+    if (!name.match(/^Law[A-Z]/))
         return
 
-    if (name.match(/^ElIcon.+/)) {
-        return {
-            name: name.replace(/^ElIcon/, ''),
-            from: '@law-ui/icons-vue',
-        }
-    }
-
-    const partialName = kebabCase(name.slice(2))// ElTableColumn -> table-column
+    const partialName = kebabCase(name.slice(3))
     const { version, ssr, nightly } = options
     return {
         name,
@@ -63,12 +56,12 @@ function getSideEffects(dirName: string, options): any | undefined {
     const esComponentsFolder = 'law-ui/es/components'
     if (importStyle === 'sass') {
         return ssr
-            ? [`${themeFolder}/src/base.scss`, `${themeFolder}/src/${dirName}.scss`]
-            : [`${esComponentsFolder}/base/style/index`, `${esComponentsFolder}/${dirName}/style/index`]
+            ? [`${themeFolder}/src/${dirName}.scss`]
+            : [`${esComponentsFolder}/${dirName}/style/index`]
     }
     else if (importStyle === true || importStyle === 'css') {
         return ssr
-            ? [`${themeFolder}/base.css`, `${themeFolder}/el-${dirName}.css`]
-            : [`${esComponentsFolder}/base/style/css`, `${esComponentsFolder}/${dirName}/style/css`]
+            ? [`${themeFolder}/law-${dirName}.css`]
+            : [`${esComponentsFolder}/${dirName}/style/css`]
     }
 }

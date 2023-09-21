@@ -1,1 +1,0 @@
-import '@law-ui/theme-chalk/base.css'

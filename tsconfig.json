@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
+        "module": "ESNext",
+        "target": "ESNext",
+        "moduleResolution":"Node",
         "esModuleInterop": true,
+        "types": ["ant-design-vue/typings/global"],
         "rootDir": ".",
         "baseUrl": ".",
         "paths": {

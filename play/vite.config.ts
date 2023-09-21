@@ -3,6 +3,7 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Inspect from 'vite-plugin-inspect'
 import mkcert from 'vite-plugin-mkcert'
@@ -71,8 +72,8 @@ export default defineConfig(async ({ mode }) => {
       //   },
       // }),
       Components({
-        include: `${__dirname}/**`,
-        resolvers: Resolver({ importStyle: 'sass' }),
+        include: [`${__dirname}/**`, path.resolve(cwdDir, "../packages/**")],
+        resolvers:[Resolver({ importStyle: 'sass' }), AntDesignVueResolver()], // , AntDesignVueResolver()
         dts: false,
       }),
       mkcert(),
