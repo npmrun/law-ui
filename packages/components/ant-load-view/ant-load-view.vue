@@ -1,5 +1,5 @@
 <template>
-    <Spin
+    <a-spin
         :spinning="loading"
         size="large"
         :tip="loadingText"
@@ -7,21 +7,21 @@
     >
         <div class="wrapper">
             <slot name="error">
-                <Result
+                <a-result
                     v-if="error && showIcon"
                     status="error"
                     :title="errorTitle"
                     :sub-title="errorSubTitle"
                 >
                     <template #extra>
-                        <Button
+                        <a-button
                             v-if="retry"
                             type="primary"
                             @click="clickRetry"
-                            >{{ errorBtnText }}</Button
+                            >{{ errorBtnText }}</a-button
                         >
                     </template>
-                </Result>
+                </a-result>
                 <template v-if="error && !showIcon">
                     <div
                         style="
@@ -44,11 +44,11 @@
                         {{ errorSubTitle }}
                     </div>
                     <div style="text-align: center">
-                        <Button
+                        <a-button
                             v-if="retry"
                             type="primary"
                             @click="clickRetry"
-                            >{{ errorBtnText }}</Button
+                            >{{ errorBtnText }}</a-button
                         >
                     </div>
                 </template>
@@ -82,14 +82,11 @@
                 <slot></slot>
             </template>
         </div>
-    </Spin>
+    </a-spin>
 </template>
 
 <script lang="ts" setup>
 import Empty from '@law-ui/components/ant-empty'
-import Spin from "ant-design-vue/es/spin"
-import Result from "ant-design-vue/es/result"
-import Button from "ant-design-vue/es/button"
 import { computed } from 'vue'
 const props = withDefaults(
     defineProps<{
