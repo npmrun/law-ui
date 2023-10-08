@@ -1,4 +1,3 @@
-import ButtonMore from "./ButtonMore"
+import { ButtonMore, ButtonMoreItem } from "./ButtonMore"
 
-export {ButtonMore}
-export default ButtonMore
+export { ButtonMore, ButtonMoreItem }
