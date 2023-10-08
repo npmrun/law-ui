@@ -4,6 +4,7 @@
         "target": "ESNext",
         "moduleResolution":"Node",
         "esModuleInterop": true,
+        "jsx": "preserve",
         "types": ["ant-design-vue/typings/global"],
         "rootDir": ".",
         "baseUrl": ".",
