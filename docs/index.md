@@ -11,6 +11,9 @@ hero:
           text: 开始
           link: /start/
         - theme: alt
+          text: 组件
+          link: /components/
+        - theme: alt
           text: Github
           link: /
 

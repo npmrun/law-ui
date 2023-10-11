@@ -19,14 +19,7 @@ export default defineConfig({
         nav: [
             { text: '首页', link: '/' },
             { text: '开始', link: '/start/' },
-            {
-                text: '库', items: [
-                    {
-                        text: 'build-lib',
-                        link: '/build-lib/guide'
-                    }
-                ]
-            },
+            { text: '组件', link: '/components/' },
         ],
         sidebar: [
             {
@@ -34,10 +27,11 @@ export default defineConfig({
                 items: [{ text: '介绍', link: '/start/' }],
             },
             {
-                text: "build-lib",
+                text: '组件',
                 items: [
-                    { text: '导航', link: '/build-lib/guide' }
-                ]
+                    { text: '导览', link: '/components/' },
+                    { text: 'ButtonPlus', link: '/components/button-plus' }
+                ],
             }
         ],
 

@@ -14,7 +14,7 @@
     "docs:build": "pnpm -C docs build",
     "build:lib": "somebuild build",
     "build:pkg": "node scripts/build.js",
-    "build:resolver": "tsc -p ./tsconfig.resolver.json",
+    "build:resolver": "pnpm --filter law-ui build",
     "build": "run-s build:lib build:resolver build:pkg"
   },
   "keywords": [],

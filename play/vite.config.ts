@@ -11,7 +11,7 @@ import type { ProjectManifest } from '@pnpm/types'
 
 import './vite.init'
 
-import Resolver from "../resolver"
+import Resolver from "../packages/law-ui/resolver"
 
 const cwdDir = process.cwd()
 
@@ -80,7 +80,7 @@ export default defineConfig(async ({ mode }) => {
       Inspect(),
     ],
     optimizeDeps: {
-      include: ['vue', ...dependencies, ...optimizeDeps],
+      include: ['vue', ...dependencies, ...optimizeDeps]
     },
     esbuild: {
       target: 'chrome64',
