@@ -24,6 +24,7 @@
     "@law-ui/components": "workspace:*",
     "@law-ui/x-components": "workspace:*",
     "@law-ui/hooks": "workspace:*",
+    "@law-ui/utils": "workspace:*",
     "@law-ui/theme-chalk": "workspace:*",
     "@somebuild/build-components-vue3": "^0.0.15",
     "ant-design-vue": "^3.2.20",

@@ -1,4 +1,10 @@
-import type { SFCWithInstall } from '@law-ui/utils/types'
+import { SFCWithInstall, NOOP } from "./types"
+
+export const withNoopInstall = <T>(component: T) => {
+    ; (component as SFCWithInstall<T>).install = NOOP
+
+    return component as SFCWithInstall<T>
+}
 
 export const withInstall = <T, E extends Record<string, any>>(
     main: T,

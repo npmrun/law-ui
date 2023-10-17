@@ -17,6 +17,9 @@ importers:
       '@law-ui/theme-chalk':
         specifier: workspace:*
         version: link:packages/theme-chalk
+      '@law-ui/utils':
+        specifier: workspace:*
+        version: link:packages/utils
       '@law-ui/x-components':
         specifier: workspace:*
         version: link:packages/x-components

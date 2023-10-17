@@ -1,1 +1,1 @@
-export * from "./withInstall"
+export * from "./use-namespace"
