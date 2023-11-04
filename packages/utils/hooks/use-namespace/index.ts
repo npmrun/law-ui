@@ -28,6 +28,11 @@ const _bem = (
 export const namespaceContextKey: InjectionKey<Ref<string | undefined>> =
     Symbol('namespaceContextKey')
 
+/**
+ * 获取上下文的命名空间
+ * @param namespaceOverrides 覆盖命令空间
+ * @returns 覆盖后的命令空间
+ */
 export const useGetDerivedNamespace = (
     namespaceOverrides?: Ref<string | undefined>
 ) => {
@@ -48,42 +53,42 @@ export const useNamespace = (
 ) => {
     const namespace = useGetDerivedNamespace(namespaceOverrides)
     const b = (blockSuffix = '') =>
-        _bem(namespace.value, block, blockSuffix, '', '')
+        _bem(namespace.value, block, blockSuffix, '', '') // law-button-test
     const e = (element?: string) =>
-        element ? _bem(namespace.value, block, '', element, '') : ''
+        element ? _bem(namespace.value, block, '', element, '') : '' // law-button__test
     const m = (modifier?: string) =>
-        modifier ? _bem(namespace.value, block, '', '', modifier) : ''
+        modifier ? _bem(namespace.value, block, '', '', modifier) : '' // law-button--test
     const be = (blockSuffix?: string, element?: string) =>
         blockSuffix && element
-            ? _bem(namespace.value, block, blockSuffix, element, '')
+            ? _bem(namespace.value, block, blockSuffix, element, '') // law-button-test__test
             : ''
     const em = (element?: string, modifier?: string) =>
         element && modifier
-            ? _bem(namespace.value, block, '', element, modifier)
+            ? _bem(namespace.value, block, '', element, modifier) // law-button__test--test
             : ''
     const bm = (blockSuffix?: string, modifier?: string) =>
         blockSuffix && modifier
-            ? _bem(namespace.value, block, blockSuffix, '', modifier)
+            ? _bem(namespace.value, block, blockSuffix, '', modifier) // law-button-test--test
             : ''
     const bem = (blockSuffix?: string, element?: string, modifier?: string) =>
         blockSuffix && element && modifier
-            ? _bem(namespace.value, block, blockSuffix, element, modifier)
+            ? _bem(namespace.value, block, blockSuffix, element, modifier) // law-button-test__test--test
             : ''
     const is: {
         (name: string, state: boolean | undefined): string
         (name: string): string
     } = (name: string, ...args: [boolean | undefined] | []) => {
         const state = args.length >= 1 ? args[0]! : true
-        return name && state ? `${statePrefix}${name}` : ''
+        return name && state ? `${statePrefix}${name}` : '' // is-test 
     }
 
     // for css var
-    // --el-xxx: value;
+    // --law-xxx: value;
     const cssVar = (object: Record<string, string>) => {
         const styles: Record<string, string> = {}
         for (const key in object) {
             if (object[key]) {
-                styles[`--${namespace.value}-${key}`] = object[key]
+                styles[`--${namespace.value}-${key}`] = object[key] // --law-test: test
             }
         }
         return styles
@@ -93,18 +98,19 @@ export const useNamespace = (
         const styles: Record<string, string> = {}
         for (const key in object) {
             if (object[key]) {
-                styles[`--${namespace.value}-${block}-${key}`] = object[key]
+                styles[`--${namespace.value}-${block}-${key}`] = object[key] // --law-button-test: test
             }
         }
         return styles
     }
 
-    const cssVarName = (name: string) => `--${namespace.value}-${name}`
+    const cssVarName = (name: string) => `--${namespace.value}-${name}` // --law-test
     const cssVarBlockName = (name: string) =>
-        `--${namespace.value}-${block}-${name}`
+        `--${namespace.value}-${block}-${name}`  // --law-button-test
 
     return {
         namespace,
+        // law-button-test
         b,
         e,
         m,

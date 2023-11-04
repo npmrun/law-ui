@@ -34,7 +34,6 @@ export const ButtonMore = defineComponent({
                 </a-button>
             )
         }
-
         return () => (
             <a-dropdown-button>
                 {{

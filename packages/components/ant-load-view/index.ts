@@ -1,4 +1,5 @@
-import AntLoadView from "./ant-load-view.vue"
+import { withInstall } from "@law-ui/utils"
+import AntLoadView from "./src/ant-load-view.vue"
 
-export const LawAntLoadView = AntLoadView
+export const LawAntLoadView = withInstall(AntLoadView)
 export default AntLoadView

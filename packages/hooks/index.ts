@@ -1,1 +1,1 @@
-export * from "./use-namespace"
+export {}
