@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "ESNext",
         "target": "ESNext",
-        "moduleResolution":"Node",
+        "moduleResolution": "Node",
         "esModuleInterop": true,
         "jsx": "preserve",
         "types": ["ant-design-vue/typings/global"],
@@ -12,5 +12,11 @@
             "@law-ui/*": ["./packages/*"]
         }
     },
-    "exclude": ["node_modules", "dist"]
+    "include": ["./packages", "./play"],
+    "exclude": ["node_modules", "dist"],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
 }

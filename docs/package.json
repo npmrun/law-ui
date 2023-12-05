@@ -4,9 +4,9 @@
   "type": "module",
   "description": "",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "tsx scripts/post.ts && vitepress dev",
+    "build": "tsx scripts/post.ts && vitepress build",
+    "preview": "tsx scripts/post.ts && vitepress preview"
   },
   "keywords": [],
   "author": "",

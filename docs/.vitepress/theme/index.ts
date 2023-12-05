@@ -9,7 +9,7 @@ export default {
     Layout() {
         return h(Theme.Layout, null, {})
     },
-    enhanceApp({app}) {
+    async enhanceApp({app}) {
         app.use(antd)
     },
 }

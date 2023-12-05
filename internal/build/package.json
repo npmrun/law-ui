@@ -1,0 +1,14 @@
+{
+    "name": "@internal/build",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsx ./index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "sideEffects": false
+}
