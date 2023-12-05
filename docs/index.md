@@ -6,6 +6,9 @@ hero:
     name: 'LAW-UI'
     text: 'antv plus'
     tagline: 基于ant-design-vue，构建符合业务的组件
+    image:
+        src: /logo.png
+        alt: LAW-UI
     actions:
         - theme: brand
           text: 开始
@@ -15,7 +18,7 @@ hero:
           link: /components/
         - theme: alt
           text: Github
-          link: /
+          link: https://github.com/npmrun/law-ui
 
 features:
     - title: 结构
@@ -40,8 +43,23 @@ features:
             width: calc(100% / 3);
         }
     }
+
     :root {
         --vp-home-hero-name-color: transparent;
-        --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+        --vp-home-hero-name-background: linear-gradient(120deg, #bd34fe, #41d1ff);
+
+        --vp-home-hero-image-background-image: url(/favicon.svg);
+        --vp-home-hero-image-filter: blur(40px)
+    }
+    @media (min-width: 640px) {
+        :root {
+            --vp-home-hero-image-filter: blur(56px)
+        }
+    }
+
+    @media (min-width: 960px) {
+        :root {
+            --vp-home-hero-image-filter: blur(72px)
+        }
     }
 </style>

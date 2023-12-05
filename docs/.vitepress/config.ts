@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'LAW-UI',
+    head: [
+        ['link', { rel: 'icon', type: 'image/png', href: '/ii.png' }]
+    ],
     description: '基于ant-design-vue，构建符合业务的组件',
     lastUpdated: true,
     lang: "zh",
@@ -15,6 +18,7 @@ export default defineConfig({
     },
     // base: "/somebuild",
     themeConfig: {
+        logo: { src: '/ii.png', width: 24, height: 24 },
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '首页', link: '/' },

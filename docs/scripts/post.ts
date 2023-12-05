@@ -11,4 +11,7 @@ if (haveBuild) {
     if (!fs.pathExistsSync(path.resolve(__dirname, "../node_modules/law-ui"))) {
         fs.createSymlinkSync(path.resolve(__dirname, "../../dist/law-ui"), path.resolve(__dirname, "../node_modules/law-ui"))
     }
+} else {
+    console.log("未构建law-ui")
+    process.exit(-1)
 }
