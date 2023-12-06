@@ -6,9 +6,9 @@ fs.ensureDirSync(path.resolve(pkgPath, "law-ui"))
 
 if (fs.pathExistsSync(path.resolve(pkgPath, "law-ui/package.json"))) {
     const pkgJSON = fs.readJSONSync(path.resolve(pkgPath, "law-ui/package.json"))
-    const rootPkgJSON = fs.readJSONSync(path.resolve(rootPath, "package.json"))
+    // const rootPkgJSON = fs.readJSONSync(path.resolve(rootPath, "package.json"))
 
-    pkgJSON.peerDependencies = rootPkgJSON.peerDependencies
+    pkgJSON.scripts = {}
     fs.writeJSONSync(path.resolve(rootPath, "dist/law-ui/package.json"), pkgJSON, { spaces: 2 })
 }
 

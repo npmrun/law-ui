@@ -4,6 +4,10 @@
     --vp-c-bg-alt: #fff; // 侧边栏
 }
 
+body{
+    background-color: unset;
+}
+
 .dark {
     --vp-c-bg-alt: #242424; // 深色模式侧边栏
 }

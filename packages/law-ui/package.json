@@ -45,6 +45,10 @@
     },
     "./*": "./*"
   },
+  "peerDependencies": {
+    "ant-design-vue": "3",
+    "vue": "3"
+  },
   "publishConfig": {
     "access": "public"
   }

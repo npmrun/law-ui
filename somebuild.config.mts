@@ -10,6 +10,7 @@ export default defineRootConfig({
         pkgRoot: "packages",
         themeRoot: "theme-chalk",
         'build-type': EBuildType.ElementPlus,
+        publishPkgJson: "./packages/law-ui/package.json",
         config: {}
     },
 })

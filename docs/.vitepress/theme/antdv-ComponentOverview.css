@@ -1,0 +1,1601 @@
+.color-palettes {
+    margin: 0px 1%;
+}
+
+.color-palettes-dark {
+    margin: 0px;
+    padding: 0px 28px;
+    background-color: rgb(20, 20, 20);
+}
+
+.color-palettes-dark .color-title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.color-palettes-dark .color-description {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.color-palettes-dark .color-palette {
+    margin: 45px 3.5% 45px 0px;
+}
+
+.color-palettes-dark .color-palette:nth-of-type(3n) {
+    margin-right: 0px;
+}
+
+.color-palettes-dark .color-palette .main-color-item {
+    margin-right: 0px;
+}
+
+.color-palettes-dark .color-palette .main-color-item:hover {
+    margin-right: -8px;
+}
+
+.color-palette {
+    display: inline-block;
+    width: 31%;
+    margin: 45px 1%;
+}
+
+.color-palette-pick {
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.color-palette-picker {
+    margin: 24px 0px;
+}
+
+.color-palette-picker-value {
+    position: relative;
+    top: -3px;
+    margin-left: 16px;
+    font-size: 14px;
+    font-family: Consolas, sans-serif;
+}
+
+.ant-row-rtl .color-palette-picker-value {
+    margin-right: 16px;
+    margin-left: 0px;
+}
+
+.color-palette-picker-validation {
+    position: relative;
+    top: -3px;
+    margin-left: 16px;
+    color: rgb(255, 77, 79);
+    font-size: 13px;
+}
+
+.ant-row-rtl .color-palette-picker-validation {
+    margin-right: 16px;
+    margin-left: 0px;
+}
+
+.color-palette-picker-validation-dark {
+    margin-left: 0px;
+}
+
+.main-color {
+    text-align: left;
+}
+
+.main-color .palette-blue-1 {
+    background: rgb(230, 247, 255);
+}
+
+.main-color .palette-blue-2 {
+    background: rgb(186, 231, 255);
+}
+
+.main-color .palette-blue-3 {
+    background: rgb(145, 213, 255);
+}
+
+.main-color .palette-blue-4 {
+    background: rgb(105, 192, 255);
+}
+
+.main-color .palette-blue-5 {
+    background: rgb(64, 169, 255);
+}
+
+.main-color .palette-blue-6 {
+    background: rgb(24, 144, 255);
+}
+
+.main-color .palette-blue-7 {
+    background: rgb(9, 109, 217);
+}
+
+.main-color .palette-blue-8 {
+    background: rgb(0, 80, 179);
+}
+
+.main-color .palette-blue-9 {
+    background: rgb(0, 58, 140);
+}
+
+.main-color .palette-blue-10 {
+    background: rgb(0, 39, 102);
+}
+
+.main-color .palette-purple-1 {
+    background: rgb(249, 240, 255);
+}
+
+.main-color .palette-purple-2 {
+    background: rgb(239, 219, 255);
+}
+
+.main-color .palette-purple-3 {
+    background: rgb(211, 173, 247);
+}
+
+.main-color .palette-purple-4 {
+    background: rgb(179, 127, 235);
+}
+
+.main-color .palette-purple-5 {
+    background: rgb(146, 84, 222);
+}
+
+.main-color .palette-purple-6 {
+    background: rgb(114, 46, 209);
+}
+
+.main-color .palette-purple-7 {
+    background: rgb(83, 29, 171);
+}
+
+.main-color .palette-purple-8 {
+    background: rgb(57, 16, 133);
+}
+
+.main-color .palette-purple-9 {
+    background: rgb(34, 7, 94);
+}
+
+.main-color .palette-purple-10 {
+    background: rgb(18, 3, 56);
+}
+
+.main-color .palette-cyan-1 {
+    background: rgb(230, 255, 251);
+}
+
+.main-color .palette-cyan-2 {
+    background: rgb(181, 245, 236);
+}
+
+.main-color .palette-cyan-3 {
+    background: rgb(135, 232, 222);
+}
+
+.main-color .palette-cyan-4 {
+    background: rgb(92, 219, 211);
+}
+
+.main-color .palette-cyan-5 {
+    background: rgb(54, 207, 201);
+}
+
+.main-color .palette-cyan-6 {
+    background: rgb(19, 194, 194);
+}
+
+.main-color .palette-cyan-7 {
+    background: rgb(8, 151, 156);
+}
+
+.main-color .palette-cyan-8 {
+    background: rgb(0, 109, 117);
+}
+
+.main-color .palette-cyan-9 {
+    background: rgb(0, 71, 79);
+}
+
+.main-color .palette-cyan-10 {
+    background: rgb(0, 35, 41);
+}
+
+.main-color .palette-green-1 {
+    background: rgb(246, 255, 237);
+}
+
+.main-color .palette-green-2 {
+    background: rgb(217, 247, 190);
+}
+
+.main-color .palette-green-3 {
+    background: rgb(183, 235, 143);
+}
+
+.main-color .palette-green-4 {
+    background: rgb(149, 222, 100);
+}
+
+.main-color .palette-green-5 {
+    background: rgb(115, 209, 61);
+}
+
+.main-color .palette-green-6 {
+    background: rgb(82, 196, 26);
+}
+
+.main-color .palette-green-7 {
+    background: rgb(56, 158, 13);
+}
+
+.main-color .palette-green-8 {
+    background: rgb(35, 120, 4);
+}
+
+.main-color .palette-green-9 {
+    background: rgb(19, 82, 0);
+}
+
+.main-color .palette-green-10 {
+    background: rgb(9, 43, 0);
+}
+
+.main-color .palette-magenta-1 {
+    background: rgb(255, 240, 246);
+}
+
+.main-color .palette-magenta-2 {
+    background: rgb(255, 214, 231);
+}
+
+.main-color .palette-magenta-3 {
+    background: rgb(255, 173, 210);
+}
+
+.main-color .palette-magenta-4 {
+    background: rgb(255, 133, 192);
+}
+
+.main-color .palette-magenta-5 {
+    background: rgb(247, 89, 171);
+}
+
+.main-color .palette-magenta-6 {
+    background: rgb(235, 47, 150);
+}
+
+.main-color .palette-magenta-7 {
+    background: rgb(196, 29, 127);
+}
+
+.main-color .palette-magenta-8 {
+    background: rgb(158, 16, 104);
+}
+
+.main-color .palette-magenta-9 {
+    background: rgb(120, 6, 80);
+}
+
+.main-color .palette-magenta-10 {
+    background: rgb(82, 3, 57);
+}
+
+.main-color .palette-red-1 {
+    background: rgb(255, 241, 240);
+}
+
+.main-color .palette-red-2 {
+    background: rgb(255, 204, 199);
+}
+
+.main-color .palette-red-3 {
+    background: rgb(255, 163, 158);
+}
+
+.main-color .palette-red-4 {
+    background: rgb(255, 120, 117);
+}
+
+.main-color .palette-red-5 {
+    background: rgb(255, 77, 79);
+}
+
+.main-color .palette-red-6 {
+    background: rgb(245, 34, 45);
+}
+
+.main-color .palette-red-7 {
+    background: rgb(207, 19, 34);
+}
+
+.main-color .palette-red-8 {
+    background: rgb(168, 7, 26);
+}
+
+.main-color .palette-red-9 {
+    background: rgb(130, 0, 20);
+}
+
+.main-color .palette-red-10 {
+    background: rgb(92, 0, 17);
+}
+
+.main-color .palette-volcano-1 {
+    background: rgb(255, 242, 232);
+}
+
+.main-color .palette-volcano-2 {
+    background: rgb(255, 216, 191);
+}
+
+.main-color .palette-volcano-3 {
+    background: rgb(255, 187, 150);
+}
+
+.main-color .palette-volcano-4 {
+    background: rgb(255, 156, 110);
+}
+
+.main-color .palette-volcano-5 {
+    background: rgb(255, 122, 69);
+}
+
+.main-color .palette-volcano-6 {
+    background: rgb(250, 84, 28);
+}
+
+.main-color .palette-volcano-7 {
+    background: rgb(212, 56, 13);
+}
+
+.main-color .palette-volcano-8 {
+    background: rgb(173, 33, 2);
+}
+
+.main-color .palette-volcano-9 {
+    background: rgb(135, 20, 0);
+}
+
+.main-color .palette-volcano-10 {
+    background: rgb(97, 11, 0);
+}
+
+.main-color .palette-orange-1 {
+    background: rgb(255, 247, 230);
+}
+
+.main-color .palette-orange-2 {
+    background: rgb(255, 231, 186);
+}
+
+.main-color .palette-orange-3 {
+    background: rgb(255, 213, 145);
+}
+
+.main-color .palette-orange-4 {
+    background: rgb(255, 192, 105);
+}
+
+.main-color .palette-orange-5 {
+    background: rgb(255, 169, 64);
+}
+
+.main-color .palette-orange-6 {
+    background: rgb(250, 140, 22);
+}
+
+.main-color .palette-orange-7 {
+    background: rgb(212, 107, 8);
+}
+
+.main-color .palette-orange-8 {
+    background: rgb(173, 78, 0);
+}
+
+.main-color .palette-orange-9 {
+    background: rgb(135, 56, 0);
+}
+
+.main-color .palette-orange-10 {
+    background: rgb(97, 37, 0);
+}
+
+.main-color .palette-gold-1 {
+    background: rgb(255, 251, 230);
+}
+
+.main-color .palette-gold-2 {
+    background: rgb(255, 241, 184);
+}
+
+.main-color .palette-gold-3 {
+    background: rgb(255, 229, 143);
+}
+
+.main-color .palette-gold-4 {
+    background: rgb(255, 214, 102);
+}
+
+.main-color .palette-gold-5 {
+    background: rgb(255, 197, 61);
+}
+
+.main-color .palette-gold-6 {
+    background: rgb(250, 173, 20);
+}
+
+.main-color .palette-gold-7 {
+    background: rgb(212, 136, 6);
+}
+
+.main-color .palette-gold-8 {
+    background: rgb(173, 104, 0);
+}
+
+.main-color .palette-gold-9 {
+    background: rgb(135, 77, 0);
+}
+
+.main-color .palette-gold-10 {
+    background: rgb(97, 52, 0);
+}
+
+.main-color .palette-yellow-1 {
+    background: rgb(254, 255, 230);
+}
+
+.main-color .palette-yellow-2 {
+    background: rgb(255, 255, 184);
+}
+
+.main-color .palette-yellow-3 {
+    background: rgb(255, 251, 143);
+}
+
+.main-color .palette-yellow-4 {
+    background: rgb(255, 245, 102);
+}
+
+.main-color .palette-yellow-5 {
+    background: rgb(255, 236, 61);
+}
+
+.main-color .palette-yellow-6 {
+    background: rgb(250, 219, 20);
+}
+
+.main-color .palette-yellow-7 {
+    background: rgb(212, 177, 6);
+}
+
+.main-color .palette-yellow-8 {
+    background: rgb(173, 139, 0);
+}
+
+.main-color .palette-yellow-9 {
+    background: rgb(135, 104, 0);
+}
+
+.main-color .palette-yellow-10 {
+    background: rgb(97, 71, 0);
+}
+
+.main-color .palette-lime-1 {
+    background: rgb(252, 255, 230);
+}
+
+.main-color .palette-lime-2 {
+    background: rgb(244, 255, 184);
+}
+
+.main-color .palette-lime-3 {
+    background: rgb(234, 255, 143);
+}
+
+.main-color .palette-lime-4 {
+    background: rgb(211, 242, 97);
+}
+
+.main-color .palette-lime-5 {
+    background: rgb(186, 230, 55);
+}
+
+.main-color .palette-lime-6 {
+    background: rgb(160, 217, 17);
+}
+
+.main-color .palette-lime-7 {
+    background: rgb(124, 179, 5);
+}
+
+.main-color .palette-lime-8 {
+    background: rgb(91, 140, 0);
+}
+
+.main-color .palette-lime-9 {
+    background: rgb(63, 102, 0);
+}
+
+.main-color .palette-lime-10 {
+    background: rgb(37, 64, 0);
+}
+
+.main-color .palette-geekblue-1 {
+    background: rgb(240, 245, 255);
+}
+
+.main-color .palette-geekblue-2 {
+    background: rgb(214, 228, 255);
+}
+
+.main-color .palette-geekblue-3 {
+    background: rgb(173, 198, 255);
+}
+
+.main-color .palette-geekblue-4 {
+    background: rgb(133, 165, 255);
+}
+
+.main-color .palette-geekblue-5 {
+    background: rgb(89, 126, 247);
+}
+
+.main-color .palette-geekblue-6 {
+    background: rgb(47, 84, 235);
+}
+
+.main-color .palette-geekblue-7 {
+    background: rgb(29, 57, 196);
+}
+
+.main-color .palette-geekblue-8 {
+    background: rgb(16, 35, 158);
+}
+
+.main-color .palette-geekblue-9 {
+    background: rgb(6, 17, 120);
+}
+
+.main-color .palette-geekblue-10 {
+    background: rgb(3, 8, 82);
+}
+
+.main-color .palette-gray-1 {
+    background: rgb(255, 255, 255);
+}
+
+.main-color .palette-gray-2 {
+    background: rgb(250, 250, 250);
+}
+
+.main-color .palette-gray-3 {
+    background: rgb(245, 245, 245);
+}
+
+.main-color .palette-gray-4 {
+    background: rgb(240, 240, 240);
+}
+
+.main-color .palette-gray-5 {
+    background: rgb(217, 217, 217);
+}
+
+.main-color .palette-gray-6 {
+    background: rgb(191, 191, 191);
+}
+
+.main-color .palette-gray-7 {
+    background: rgb(140, 140, 140);
+}
+
+.main-color .palette-gray-8 {
+    background: rgb(89, 89, 89);
+}
+
+.main-color .palette-gray-9 {
+    background: rgb(67, 67, 67);
+}
+
+.main-color .palette-gray-10 {
+    background: rgb(38, 38, 38);
+}
+
+.main-color .palette-gray-11 {
+    background: rgb(31, 31, 31);
+}
+
+.main-color .palette-gray-12 {
+    background: rgb(20, 20, 20);
+}
+
+.main-color .palette-gray-13 {
+    background: rgb(0, 0, 0);
+}
+
+.main-color-item {
+    position: relative;
+    height: 44px;
+    margin-right: 4px;
+    padding: 0px 12px;
+    font-size: 14px;
+    font-family: Consolas, sans-serif;
+    line-height: 44px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.main-color-item:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.main-color-item:last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.main-color-item:hover {
+    margin-right: -8px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.main-color-item .main-color-text {
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+
+.main-color-item .main-color-value {
+    position: relative;
+    left: 3px;
+    float: right;
+    transform: scale(0.85);
+    transform-origin: 100% 50%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.color-title {
+    margin: 0px 0px 24px;
+    color: rgb(92, 107, 119);
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.color-description {
+    display: block;
+    color: rgb(119, 119, 119);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.main-color:hover .main-color-value {
+    left: 0px;
+    opacity: 0.7;
+}
+
+.color-palette-horizontal {
+    width: 100%;
+}
+
+.color-palette-horizontal-dark {
+    height: 303px;
+    padding: 32px 28px;
+    background-color: rgb(20, 20, 20);
+}
+
+.color-palette-horizontal-dark .color-palette-picker {
+    margin-bottom: 0px;
+}
+
+.color-palette-horizontal-dark .color-palette-pick {
+    color: rgba(255, 255, 255, 0.65);
+    text-align: left;
+}
+
+.color-palette-horizontal-dark .color-palette-pick-hex {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.ant-row-rtl .color-palette-horizontal-dark .color-palette-pick {
+    direction: rtl;
+    text-align: right;
+}
+
+.color-palette-horizontal .main-color {
+    display: flex;
+}
+
+.color-palette-horizontal .main-color-item {
+    position: relative;
+    flex: 1 1 0%;
+    height: 86px;
+    margin-right: 0px;
+    padding: 37px 0px 0px;
+    line-height: normal;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.color-palette-horizontal .main-color-item .main-color-text {
+    float: none;
+}
+
+.color-palette-horizontal .main-color-item:hover {
+    height: 96px;
+    margin-top: -10px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.color-palette-horizontal .main-color-value {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    transform-origin: unset;
+}
+
+.color-palette-horizontal .main-color:hover .main-color-item {
+    padding-top: 8px;
+}
+
+.color-palette-horizontal .main-color:hover .main-color-value {
+    bottom: 8px;
+    opacity: 0.7;
+}
+
+.components-overview {
+    padding: 0px;
+}
+
+.components-overview-group-title {
+    margin-bottom: 24px !important;
+}
+
+.components-overview-title {
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.85);
+    text-overflow: ellipsis;
+}
+
+.components-overview-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 152px;
+}
+
+.components-overview-card {
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.components-overview-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px -8px, rgba(0, 0, 0, 0.05) 0px 9px 28px, rgba(0, 0, 0, 0.03) 0px 12px 48px 16px;
+}
+
+.components-overview-search {
+    width: 100%;
+    padding: 0px;
+    font-size: 20px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.components-overview-search input {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+}
+
+.components-overview-search .anticon {
+    color: rgb(187, 187, 187);
+}
+
+.components-overview-img img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+[data-doc-theme="dark"] .color-palettes {
+    margin: 0px 1%;
+}
+
+[data-doc-theme="dark"] .color-palettes-dark {
+    margin: 0px;
+    padding: 0px 28px;
+    background-color: rgb(20, 20, 20);
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-description {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-palette {
+    margin: 45px 3.5% 45px 0px;
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-palette:nth-of-type(3n) {
+    margin-right: 0px;
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-palette .main-color-item {
+    margin-right: 0px;
+}
+
+[data-doc-theme="dark"] .color-palettes-dark .color-palette .main-color-item:hover {
+    margin-right: -8px;
+}
+
+[data-doc-theme="dark"] .color-palette {
+    display: inline-block;
+    width: 31%;
+    margin: 45px 1%;
+}
+
+[data-doc-theme="dark"] .color-palette-pick {
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+[data-doc-theme="dark"] .color-palette-picker {
+    margin: 24px 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-picker-value {
+    position: relative;
+    top: -3px;
+    margin-left: 16px;
+    font-size: 14px;
+    font-family: Consolas, sans-serif;
+}
+
+[data-doc-theme="dark"] .ant-row-rtl .color-palette-picker-value {
+    margin-right: 16px;
+    margin-left: 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-picker-validation {
+    position: relative;
+    top: -3px;
+    margin-left: 16px;
+    color: rgb(166, 29, 36);
+    font-size: 13px;
+}
+
+[data-doc-theme="dark"] .ant-row-rtl .color-palette-picker-validation {
+    margin-right: 16px;
+    margin-left: 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-picker-validation-dark {
+    margin-left: 0px;
+}
+
+[data-doc-theme="dark"] .main-color {
+    text-align: left;
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-1 {
+    background: rgb(17, 29, 44);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-2 {
+    background: rgb(17, 42, 69);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-3 {
+    background: rgb(21, 57, 91);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-4 {
+    background: rgb(22, 76, 126);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-5 {
+    background: rgb(23, 101, 173);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-6 {
+    background: rgb(23, 125, 220);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-7 {
+    background: rgb(60, 154, 232);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-8 {
+    background: rgb(101, 183, 243);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-9 {
+    background: rgb(141, 207, 248);
+}
+
+[data-doc-theme="dark"] .main-color .palette-blue-10 {
+    background: rgb(183, 227, 250);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-1 {
+    background: rgb(26, 19, 37);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-2 {
+    background: rgb(36, 22, 58);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-3 {
+    background: rgb(48, 28, 77);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-4 {
+    background: rgb(62, 32, 105);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-5 {
+    background: rgb(81, 37, 143);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-6 {
+    background: rgb(100, 42, 181);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-7 {
+    background: rgb(133, 78, 202);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-8 {
+    background: rgb(171, 122, 224);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-9 {
+    background: rgb(205, 168, 240);
+}
+
+[data-doc-theme="dark"] .main-color .palette-purple-10 {
+    background: rgb(235, 215, 250);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-1 {
+    background: rgb(17, 33, 35);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-2 {
+    background: rgb(17, 53, 54);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-3 {
+    background: rgb(20, 72, 72);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-4 {
+    background: rgb(20, 98, 98);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-5 {
+    background: rgb(19, 133, 133);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-6 {
+    background: rgb(19, 168, 168);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-7 {
+    background: rgb(51, 188, 183);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-8 {
+    background: rgb(88, 209, 201);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-9 {
+    background: rgb(132, 226, 216);
+}
+
+[data-doc-theme="dark"] .main-color .palette-cyan-10 {
+    background: rgb(178, 241, 232);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-1 {
+    background: rgb(22, 35, 18);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-2 {
+    background: rgb(29, 55, 18);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-3 {
+    background: rgb(39, 73, 22);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-4 {
+    background: rgb(48, 99, 23);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-5 {
+    background: rgb(60, 134, 24);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-6 {
+    background: rgb(73, 170, 25);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-7 {
+    background: rgb(106, 190, 57);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-8 {
+    background: rgb(143, 212, 96);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-9 {
+    background: rgb(178, 229, 139);
+}
+
+[data-doc-theme="dark"] .main-color .palette-green-10 {
+    background: rgb(213, 242, 187);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-1 {
+    background: rgb(41, 19, 33);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-2 {
+    background: rgb(64, 22, 47);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-3 {
+    background: rgb(85, 28, 59);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-4 {
+    background: rgb(117, 32, 79);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-5 {
+    background: rgb(160, 38, 105);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-6 {
+    background: rgb(203, 43, 131);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-7 {
+    background: rgb(224, 82, 156);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-8 {
+    background: rgb(243, 127, 183);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-9 {
+    background: rgb(248, 168, 204);
+}
+
+[data-doc-theme="dark"] .main-color .palette-magenta-10 {
+    background: rgb(250, 210, 227);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-1 {
+    background: rgb(42, 18, 21);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-2 {
+    background: rgb(67, 20, 24);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-3 {
+    background: rgb(88, 24, 28);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-4 {
+    background: rgb(121, 26, 31);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-5 {
+    background: rgb(166, 29, 36);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-6 {
+    background: rgb(211, 32, 41);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-7 {
+    background: rgb(232, 71, 73);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-8 {
+    background: rgb(243, 115, 112);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-9 {
+    background: rgb(248, 159, 154);
+}
+
+[data-doc-theme="dark"] .main-color .palette-red-10 {
+    background: rgb(250, 200, 195);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-1 {
+    background: rgb(43, 22, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-2 {
+    background: rgb(68, 29, 18);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-3 {
+    background: rgb(89, 39, 22);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-4 {
+    background: rgb(124, 49, 24);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-5 {
+    background: rgb(170, 62, 25);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-6 {
+    background: rgb(216, 74, 27);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-7 {
+    background: rgb(232, 112, 64);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-8 {
+    background: rgb(243, 149, 106);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-9 {
+    background: rgb(248, 182, 146);
+}
+
+[data-doc-theme="dark"] .main-color .palette-volcano-10 {
+    background: rgb(250, 212, 188);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-1 {
+    background: rgb(43, 29, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-2 {
+    background: rgb(68, 42, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-3 {
+    background: rgb(89, 56, 21);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-4 {
+    background: rgb(124, 74, 21);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-5 {
+    background: rgb(170, 98, 21);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-6 {
+    background: rgb(216, 122, 22);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-7 {
+    background: rgb(232, 154, 60);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-8 {
+    background: rgb(243, 183, 101);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-9 {
+    background: rgb(248, 207, 141);
+}
+
+[data-doc-theme="dark"] .main-color .palette-orange-10 {
+    background: rgb(250, 227, 183);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-1 {
+    background: rgb(43, 33, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-2 {
+    background: rgb(68, 49, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-3 {
+    background: rgb(89, 66, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-4 {
+    background: rgb(124, 89, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-5 {
+    background: rgb(170, 119, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-6 {
+    background: rgb(216, 150, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-7 {
+    background: rgb(232, 179, 57);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-8 {
+    background: rgb(243, 204, 98);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-9 {
+    background: rgb(248, 223, 139);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gold-10 {
+    background: rgb(250, 237, 181);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-1 {
+    background: rgb(43, 38, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-2 {
+    background: rgb(68, 59, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-3 {
+    background: rgb(89, 80, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-4 {
+    background: rgb(124, 110, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-5 {
+    background: rgb(170, 149, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-6 {
+    background: rgb(216, 189, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-7 {
+    background: rgb(232, 214, 57);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-8 {
+    background: rgb(243, 234, 98);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-9 {
+    background: rgb(248, 244, 139);
+}
+
+[data-doc-theme="dark"] .main-color .palette-yellow-10 {
+    background: rgb(250, 250, 181);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-1 {
+    background: rgb(31, 38, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-2 {
+    background: rgb(46, 60, 16);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-3 {
+    background: rgb(62, 79, 19);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-4 {
+    background: rgb(83, 109, 19);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-5 {
+    background: rgb(111, 148, 18);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-6 {
+    background: rgb(139, 187, 17);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-7 {
+    background: rgb(169, 209, 52);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-8 {
+    background: rgb(201, 231, 93);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-9 {
+    background: rgb(228, 248, 139);
+}
+
+[data-doc-theme="dark"] .main-color .palette-lime-10 {
+    background: rgb(240, 250, 181);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-1 {
+    background: rgb(19, 22, 41);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-2 {
+    background: rgb(22, 29, 64);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-3 {
+    background: rgb(28, 39, 85);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-4 {
+    background: rgb(32, 49, 117);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-5 {
+    background: rgb(38, 62, 160);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-6 {
+    background: rgb(43, 74, 203);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-7 {
+    background: rgb(82, 115, 224);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-8 {
+    background: rgb(127, 158, 243);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-9 {
+    background: rgb(168, 193, 248);
+}
+
+[data-doc-theme="dark"] .main-color .palette-geekblue-10 {
+    background: rgb(210, 224, 250);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-1 {
+    background: rgb(255, 255, 255);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-2 {
+    background: rgb(250, 250, 250);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-3 {
+    background: rgb(245, 245, 245);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-4 {
+    background: rgb(240, 240, 240);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-5 {
+    background: rgb(217, 217, 217);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-6 {
+    background: rgb(191, 191, 191);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-7 {
+    background: rgb(140, 140, 140);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-8 {
+    background: rgba(255, 255, 255, 0.65);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-9 {
+    background: rgb(67, 67, 67);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-10 {
+    background: rgb(38, 38, 38);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-11 {
+    background: rgb(31, 31, 31);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-12 {
+    background: rgb(20, 20, 20);
+}
+
+[data-doc-theme="dark"] .main-color .palette-gray-13 {
+    background: rgb(0, 0, 0);
+}
+
+[data-doc-theme="dark"] .main-color-item {
+    position: relative;
+    height: 44px;
+    margin-right: 4px;
+    padding: 0px 12px;
+    font-size: 14px;
+    font-family: Consolas, sans-serif;
+    line-height: 44px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+[data-doc-theme="dark"] .main-color-item:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+
+[data-doc-theme="dark"] .main-color-item:last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
+[data-doc-theme="dark"] .main-color-item:hover {
+    margin-right: -8px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+[data-doc-theme="dark"] .main-color-item .main-color-text {
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+
+[data-doc-theme="dark"] .main-color-item .main-color-value {
+    position: relative;
+    left: 3px;
+    float: right;
+    transform: scale(0.85);
+    transform-origin: 100% 50%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+[data-doc-theme="dark"] .color-title {
+    margin: 0px 0px 24px;
+    color: rgb(92, 107, 119);
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+[data-doc-theme="dark"] .color-description {
+    display: block;
+    color: rgb(119, 119, 119);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+[data-doc-theme="dark"] .main-color:hover .main-color-value {
+    left: 0px;
+    opacity: 0.7;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal {
+    width: 100%;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal-dark {
+    height: 303px;
+    padding: 32px 28px;
+    background-color: rgb(20, 20, 20);
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal-dark .color-palette-picker {
+    margin-bottom: 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal-dark .color-palette-pick {
+    color: rgba(255, 255, 255, 0.65);
+    text-align: left;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal-dark .color-palette-pick-hex {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+[data-doc-theme="dark"] .ant-row-rtl .color-palette-horizontal-dark .color-palette-pick {
+    direction: rtl;
+    text-align: right;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color {
+    display: flex;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color-item {
+    position: relative;
+    flex: 1 1 0%;
+    height: 86px;
+    margin-right: 0px;
+    padding: 37px 0px 0px;
+    line-height: normal;
+    text-align: center;
+    border-radius: 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color-item .main-color-text {
+    float: none;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color-item:hover {
+    height: 96px;
+    margin-top: -10px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color-value {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    transform-origin: unset;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color:hover .main-color-item {
+    padding-top: 8px;
+}
+
+[data-doc-theme="dark"] .color-palette-horizontal .main-color:hover .main-color-value {
+    bottom: 8px;
+    opacity: 0.7;
+}
+
+[data-doc-theme="dark"] .components-overview {
+    padding: 0px;
+}
+
+[data-doc-theme="dark"] .components-overview-group-title {
+    margin-bottom: 24px !important;
+}
+
+[data-doc-theme="dark"] .components-overview-title {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.65);
+    text-overflow: ellipsis;
+}
+
+[data-doc-theme="dark"] .components-overview-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 152px;
+}
+
+[data-doc-theme="dark"] .components-overview-card {
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+[data-doc-theme="dark"] .components-overview-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 6px 16px -8px, rgba(0, 0, 0, 0.2) 0px 9px 28px, rgba(0, 0, 0, 0.12) 0px 12px 48px 16px;
+}
+
+[data-doc-theme="dark"] .components-overview-search {
+    width: 100%;
+    padding: 0px;
+    font-size: 20px;
+    border: 0px;
+    box-shadow: none;
+}
+
+[data-doc-theme="dark"] .components-overview-search input {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+}
+
+[data-doc-theme="dark"] .components-overview-search .anticon {
+    color: rgb(187, 187, 187);
+}
+
+[data-doc-theme="dark"] .components-overview-img img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
