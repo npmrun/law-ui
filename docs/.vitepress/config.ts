@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitepress'
+import IframePlugin from "./plugins/iframe"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -53,6 +54,9 @@ export default defineConfig({
                     )
                 }
             ]
-        }
+        },
+        plugins: [
+            IframePlugin
+        ]
     },
 })

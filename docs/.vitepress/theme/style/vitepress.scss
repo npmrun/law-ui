@@ -1,3 +1,5 @@
+// @import './vitepress.dark.scss';
+
 :root {
     --vp-c-green: #5d80f4;
     --vp-c-brand-dark: #5d80f4;
@@ -176,5 +178,3 @@ body{
 .dark::view-transition-new(root) {
     z-index: 1000;
 }
-
-@import './vitepress.dark.scss';
