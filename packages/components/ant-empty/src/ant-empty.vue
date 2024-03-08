@@ -10,7 +10,7 @@ import { computed } from 'vue';
 
 const props = withDefaults(
     defineProps<{
-        layout: 'fixed' | 'inline'
+        layout?: 'fixed' | 'inline'
     }>(),
     {
         layout: 'inline',

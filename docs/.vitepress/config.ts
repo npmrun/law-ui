@@ -18,7 +18,7 @@ export default defineConfig({
     },
     // base: "/somebuild",
     themeConfig: {
-        logo: { src: '/ii.png', width: 24, height: 24 },
+        logo: { src: '/favicon.png', width: 24, height: 24 },
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '首页', link: '/' },

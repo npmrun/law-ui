@@ -1,4 +1,4 @@
-import { defineComponent, inject, provide } from 'vue'
+import { Ref, computed, defineComponent, inject, provide, ref } from 'vue'
 
 export const ButtonMore = defineComponent({
     name: 'ButtonMore',
@@ -7,6 +7,7 @@ export const ButtonMore = defineComponent({
     setup(props, { slots, emit }) {
         const { text } = props
         const holder: any = {}
+        const itemKey = ref(0)
         function handleClick({ item, key, keyPath }: any) {
             holder[key]?.({ item, key, keyPath })
             emit('menuClick', { item, key, keyPath })
@@ -15,9 +16,9 @@ export const ButtonMore = defineComponent({
             // if(Reflect.has(holder, key)){
             //     console.warn(`itemKey: ${key} 重复，请检查`)
             // }
-            holder[key] = fn
+            key && (holder[key] = fn)
         }
-        provide(token, register)
+        provide(token, { register, itemKey })
 
         const otherSlots = {
             ...slots,
@@ -70,17 +71,21 @@ export const ButtonMoreItem = defineComponent({
     name: 'ButtonPlus-Item',
     props: ['itemKey', 'text', 'onClick'],
     setup(props, { slots }) {
-        const { itemKey, text, onClick } = props
-        const register = inject(token) as Function
-        if (itemKey === undefined) {
-            throw '请提供一个itemKey值'
+        const { text, onClick } = props
+        const { register, itemKey } = inject(token) as { register: Function, itemKey: Ref<number> }
+        let cloneKey
+        if (props.itemKey !== undefined) {
+            cloneKey = props.itemKey
+        } else {
+            cloneKey = `$$key-` + (+itemKey.value)
         }
         if (onClick && register) {
-            register(itemKey, onClick)
+            register(cloneKey, onClick)
+            itemKey.value++
         }
 
         return () => (
-            <a-menu-item key={itemKey}>
+            <a-menu-item key={cloneKey}>
                 {{
                     default: slots?.default ? slots.default : () => text,
                 }}
