@@ -11,3 +11,8 @@
 
 
 这主要是因为内部是通过 `reasolveComponent` 获取组件的，而 `unplugin-vue-components` 并不支持解析 `reasolveComponent` 中的组件。
+
+```js
+import {Modal} from "ant-design-vue"
+import 'ant-design-vue/lib/modal/style/index.css'
+```

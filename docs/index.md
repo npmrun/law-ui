@@ -4,8 +4,8 @@ layout: home
 
 hero:
     name: 'LAW-UI'
-    text: 'antv plus'
-    tagline: 基于ant-design-vue，构建符合业务的组件
+    text: 'antv3.x plus'
+    tagline: 基于ant-design-vue 3.x，构建符合业务的组件
     image:
         src: /logo.png
         alt: LAW-UI
@@ -17,16 +17,19 @@ hero:
           text: 组件
           link: /components/
         - theme: alt
+          text: Hooks
+          link: /hooks/
+        - theme: alt
           text: Github
           link: https://github.com/npmrun/law-ui
 
 features:
-    - title: 结构
-      details: 项目基于element-plus结构
     - title: 体验
-      details: 增强antv使用体验
-    - title: 业务
+      details: 增强antv3.x使用体验
+    - title: 组件
       details: 符合国内业务场景
+    - title: Hook
+      details: 通用Hook,简化页面逻辑
 ---
 
 <style>

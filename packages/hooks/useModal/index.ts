@@ -13,12 +13,12 @@ import {
 } from "vue";
 import { IEneModalState } from "./type";
 import useAsyncComponent from "../useAsyncComponent";
-import { createModalContext } from "./context";
+import {useModalContext } from "./context";
 import { cloneDeep } from "./utils";
 import defineDefaultComponentInModal from "./customComponent";
 
 let createComponentInModal;
-export { defineDefaultComponentInModal };
+export { defineDefaultComponentInModal, useModalContext };
 export function useEneModal_ChangeComponentInModal(
     fn: typeof defineDefaultComponentInModal
 ) {

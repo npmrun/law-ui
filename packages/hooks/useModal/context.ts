@@ -7,5 +7,5 @@ export function createModalContext(data: EneModalExpose) {
 }
 
 export function useModalContext() {
-    return inject(EneModalToken) as EneModalExpose
+    return inject(EneModalToken)
 }

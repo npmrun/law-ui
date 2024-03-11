@@ -23,7 +23,6 @@ export default defineConfig({
         nav: [
             { text: '首页', link: '/' },
             { text: '开始', link: '/start/' },
-            { text: '组件', link: '/components/' },
         ],
         sidebar: [
             {
@@ -31,10 +30,17 @@ export default defineConfig({
                 items: [{ text: '介绍', link: '/start/' }],
             },
             {
-                text: '组件',
+                text: 'AntDeisgnVue增强组件',
                 items: [
                     { text: '导览', link: '/components/' },
                     { text: 'ButtonPlus', link: '/components/button-plus' }
+                ],
+            },
+            {
+                text: 'Hook',
+                items: [
+                    { text: '导览', link: '/hooks/' },
+                    { text: 'useModal', link: '/hooks/useModal' },
                 ],
             }
         ],
