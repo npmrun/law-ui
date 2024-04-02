@@ -2,7 +2,7 @@
   "name": "law-ui",
   "version": "0.0.2-bate.2",
   "scripts": {
-    "build": "tsc -p ./tsconfig.resolver.json"
+    "build:common": "tsc -p ./tsconfig.resolver.json"
   },
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -12,6 +12,11 @@
       "types": "./es/index.d.ts",
       "import": "./es/index.mjs",
       "require": "./lib/index.js"
+    },
+    "./resolver": {
+      "types": "./es/resolver.d.ts",
+      "import": "./es/resolver.mjs",
+      "require": "./lib/resolver.js"
     },
     "./es": {
       "types": "./es/index.d.ts",
@@ -46,8 +51,8 @@
     "./*": "./*"
   },
   "peerDependencies": {
-    "ant-design-vue": "3",
-    "vue": "3"
+    "ant-design-vue": ">=3.0.0",
+    "vue": ">=3.0.0"
   },
   "publishConfig": {
     "access": "public"

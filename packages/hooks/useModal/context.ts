@@ -1,5 +1,5 @@
 import { inject, provide } from "vue";
-import { EneModalExpose } from "./type";
+import type { EneModalExpose } from "./type";
 import { EneModalToken } from "./token";
 
 export function createModalContext(data: EneModalExpose) {

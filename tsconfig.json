@@ -12,11 +12,14 @@
             "@law-ui/*": ["./packages/*"]
         }
     },
-    "include": ["./packages", "./play"],
+    "include": ["./packages"],
     "exclude": ["node_modules", "dist"],
     "references": [
         {
             "path": "./tsconfig.node.json"
+        },
+        {
+            "path": "./tsconfig.play.json"
         }
     ]
 }

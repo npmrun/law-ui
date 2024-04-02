@@ -13,7 +13,7 @@ const require = createRequire(import.meta.url)
 let haveBuild = fs.pathExistsSync(path.resolve("../dist/law-ui"))
 let LawResolver
 if (haveBuild) {
-    const resolver = require(path.resolve("../dist/law-ui/resolver"))
+    const resolver = require(path.resolve("../dist/law-ui/lib/resolver"))
     // @ts-ignore
     LawResolver = resolver.default
 }

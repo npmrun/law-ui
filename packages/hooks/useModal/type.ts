@@ -1,11 +1,11 @@
 
 
-interface IEneModalState {
+export interface IEneModalState {
     visible: boolean
     title: string
     allProps?: any
 }
-interface IEneModalAction {
+export interface IEneModalAction {
     show: Function
     hide: Function
 }

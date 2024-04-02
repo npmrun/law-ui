@@ -1,5 +1,5 @@
 import { InjectionKey } from "vue";
-import { EneModalExpose } from "./type";
+import type { EneModalExpose } from "./type";
 
 
 /**

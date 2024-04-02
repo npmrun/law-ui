@@ -1,0 +1,19 @@
+@use "function" as *;
+@use "../common/var" as *;
+
+// BEM
+@mixin b($block) {
+    $B: $namespace + $common-separator + $block !global;
+
+    .#{$B} {
+        @content;
+    }
+}
+
+@mixin when($state) {
+    @at-root {
+        &.#{$state-prefix + $state} {
+            @content;
+        }
+    }
+}

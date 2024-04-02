@@ -1,0 +1,30 @@
+.law-message {
+    position: fixed;
+    // left: 50%;
+    top: 0;
+    right: 36px;
+    z-index: 1000;
+    // transform: translateX(-50%);
+    min-width: 220px;
+    max-width: 350px;
+    transition: opacity .3s, transform .4s, top .4s;
+    display: inline-block;
+    padding: 9px 12px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: all;
+    .law-message-wrapper {}
+}
+
+.law-message-fade-enter-active,
+.law-message-fade-leave-active {
+    /*transition: opacity .3s,transform .4s,top .4s;*/
+}
+
+.law-message-fade-enter-from,
+.law-message-fade-leave-to {
+    opacity: 0;
+    // transform: translate(-50%, -80px);
+    transform: translate(0, -80px);
+}

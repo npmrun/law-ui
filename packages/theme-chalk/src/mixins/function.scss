@@ -84,3 +84,8 @@
     // @debug $name;
     @return $name;
 }
+
+@function is($block){
+    $name: 'is' + config.$common-separator + $block;
+    @return $name;
+}

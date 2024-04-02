@@ -11,6 +11,7 @@ import type { ProjectManifest } from '@pnpm/types'
 
 import './vite.init'
 
+// @ts-ignore
 import Resolver from "../packages/law-ui/resolver"
 
 const cwdDir = process.cwd()
@@ -74,7 +75,7 @@ export default defineConfig(async ({ mode }) => {
       Components({
         include: [`${__dirname}/**`, path.resolve(cwdDir, "../packages/**")],
         resolvers:[Resolver({ importStyle: 'sass' }), AntDesignVueResolver()], // , AntDesignVueResolver()
-        dts: false,
+        dts: true,
       }),
       mkcert(),
       Inspect(),

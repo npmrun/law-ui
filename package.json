@@ -28,7 +28,7 @@
     "@law-ui/theme-chalk": "workspace:*",
     "@law-ui/utils": "workspace:*",
     "@law-ui/x-components": "workspace:*",
-    "@somebuild/build-components-vue3": "^0.0.16",
+    "@somebuild/build-components-vue3": "^0.0.19",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.10.3",
     "ant-design-vue": "^3.2.20",
@@ -38,7 +38,12 @@
     "somebuild": "^0.0.12",
     "tsx": "^4.6.2",
     "typescript": "^5.2.2",
-    "vue": "^3.3.4"
+    "vue": "^3.4.21",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "vite": "^4.4.9",
+    "sass": "^1.68.0",
+    "unplugin-vue-components": "0.25.2"
   },
   "pnpm": {
     "peerDependencyRules": {

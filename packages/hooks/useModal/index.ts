@@ -9,13 +9,14 @@ import {
     reactive,
     ref,
     useAttrs,
+    watch,
     watchEffect,
 } from "vue";
-import { IEneModalState } from "./type";
+import type { IEneModalState } from "./type";
 import useAsyncComponent from "../useAsyncComponent";
-import {useModalContext } from "./context";
-import { cloneDeep } from "./utils";
+import { useModalContext } from "./context";
 import defineDefaultComponentInModal from "./customComponent";
+import { cloneDeep } from "@law-ui/utils";
 
 let createComponentInModal;
 export { defineDefaultComponentInModal, useModalContext };
@@ -184,23 +185,42 @@ export function useEneModal<T extends Object, Res extends any>({
         })
     );
     _.UI = component;
-    let markRawUI = markRaw(_.UI);
+    let markRawUI = markRaw(_.UI)
+    
     if (autoInject) {
         allModals.value.push(markRawUI);
-        onScopeDispose(() => {
+        // @ts-ignore
+        _.destory = () => {
+            let index = -1
             for (let i = 0; i < allModals.value.length; i++) {
                 const modal = allModals.value[i];
                 if (modal === markRawUI) {
-                    allModals.value.splice(i, 1);
+                    index = i
                     break;
                 }
+            }
+            if(index !== -1){
+                allModals.value.splice(index, 1);
+            }
+        }
+        onScopeDispose(() => {
+            let index = -1
+            for (let i = 0; i < allModals.value.length; i++) {
+                const modal = allModals.value[i];
+                if (modal === markRawUI) {
+                    index = i
+                    break;
+                }
+            }
+            if(index !== -1){
+                allModals.value.splice(index, 1);
             }
         });
     }
     return _;
 }
 
-const allModals = ref<any[]>([]);
+const allModals = ref([]);
 
 export function ModalContainer() {
     return h(
