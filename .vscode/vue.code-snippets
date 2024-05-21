@@ -1,0 +1,21 @@
+{
+  "vue-play": {
+    "scope": "vue,vue-html",
+    "prefix": "vue-play",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "  ",
+      "</script>",
+      "",
+      "<template>",
+      "    <div class=\"play-container\">",
+      "      $1",
+      "    </div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+.law-form {
+    position: relative;
+
+    &.law-inline {
+        margin-top: -10px;
+
+        .ant-select {
+            min-width: 120px;
+        }
+    }
+
+    .ant-form-inline {
+        display: block;
+    }
+
+    .ant-form-item-label {
+        width: var(--law-form-LawForm);
+    }
+}

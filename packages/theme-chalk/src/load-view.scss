@@ -1,0 +1,22 @@
+@use 'common/var.scss' as *;
+
+.law-load-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        :deep(.ant-spin-container) {
+            height: 100%;
+        }
+    }
+
+    .law-empty {
+        &.empty-inline {
+            padding-top: 50px;
+        }
+    }
+    
+}

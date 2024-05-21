@@ -3,7 +3,7 @@ import { ref, onMounted, watch, nextTick } from 'vue'
 import { useData, inBrowser } from 'vitepress'
 import VPSwitch from 'vitepress/dist/client/theme-default/components/VPSwitch.vue'
 import VPIconSun from 'vitepress/dist/client/theme-default/components/icons/VPIconSun.vue'
-import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue'
+import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPIconMinus.vue'
 import { APPEARANCE_KEY } from 'vitepress/dist/client/shared'
 
 const { site, isDark } = useData()
@@ -119,18 +119,22 @@ watch(checked, newIsDark => {
         document.getElementsByTagName('html')[0].setAttribute('data-doc-theme', 'dark');
         document.getElementsByTagName('body')[0].setAttribute('data-theme', 'dark');
         document.getElementsByTagName('html')[0].style.colorScheme = 'dark';
+        // @ts-ignore
+        window.darkTheme()
     } else {
         document.getElementsByTagName('html')[0].setAttribute('data-doc-theme', 'light');
         document.getElementsByTagName('body')[0].setAttribute('data-theme', 'light');
         document.getElementsByTagName('html')[0].style.colorScheme = 'light';
+        // @ts-ignore
+        window.lightTheme()
     }
 })
 </script>
 
 <template>
     <VPSwitch title="toggle dark mode" class="VPSwitchAppearance" :aria-checked="checked" @click="toggle">
-        <VPIconSun class="sun" />
-        <VPIconMoon class="moon" />
+        <VPIconSun class="vpi-sun sun" />
+        <VPIconMoon class="vpi-moon moon" />
     </VPSwitch>
 </template>
 

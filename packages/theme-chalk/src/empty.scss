@@ -1,0 +1,12 @@
+@use 'common/var.scss' as *;
+
+$name: law-empty;
+
+.#{$name} {
+    &.#{$name}--fixed{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

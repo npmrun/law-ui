@@ -1,6 +1,6 @@
-import { computed, getCurrentInstance, inject, ref, unref } from 'vue'
+import { computed, getCurrentInstance, inject, isRef, ref, unref } from 'vue'
 
-import type { InjectionKey, Ref } from 'vue'
+import type { InjectionKey, MaybeRef, Ref } from 'vue'
 
 export const defaultNamespace = 'law'
 const statePrefix = 'is-'
@@ -48,31 +48,32 @@ export const useGetDerivedNamespace = (
 }
 
 export const useNamespace = (
-    block: string,
+    block: MaybeRef<string>,
     namespaceOverrides?: Ref<string | undefined>
 ) => {
     const namespace = useGetDerivedNamespace(namespaceOverrides)
+    const getBlock = () => isRef(block) ? block.value : block
     const b = (blockSuffix = '') =>
-        _bem(namespace.value, block, blockSuffix, '', '') // law-button-test
+        _bem(namespace.value, getBlock(), blockSuffix, '', '') // law-button-test
     const e = (element?: string) =>
-        element ? _bem(namespace.value, block, '', element, '') : '' // law-button__test
+        element ? _bem(namespace.value, getBlock(), '', element, '') : '' // law-button__test
     const m = (modifier?: string) =>
-        modifier ? _bem(namespace.value, block, '', '', modifier) : '' // law-button--test
+        modifier ? _bem(namespace.value, getBlock(), '', '', modifier) : '' // law-button--test
     const be = (blockSuffix?: string, element?: string) =>
         blockSuffix && element
-            ? _bem(namespace.value, block, blockSuffix, element, '') // law-button-test__test
+            ? _bem(namespace.value, getBlock(), blockSuffix, element, '') // law-button-test__test
             : ''
     const em = (element?: string, modifier?: string) =>
         element && modifier
-            ? _bem(namespace.value, block, '', element, modifier) // law-button__test--test
+            ? _bem(namespace.value, getBlock(), '', element, modifier) // law-button__test--test
             : ''
     const bm = (blockSuffix?: string, modifier?: string) =>
         blockSuffix && modifier
-            ? _bem(namespace.value, block, blockSuffix, '', modifier) // law-button-test--test
+            ? _bem(namespace.value, getBlock(), blockSuffix, '', modifier) // law-button-test--test
             : ''
     const bem = (blockSuffix?: string, element?: string, modifier?: string) =>
         blockSuffix && element && modifier
-            ? _bem(namespace.value, block, blockSuffix, element, modifier) // law-button-test__test--test
+            ? _bem(namespace.value, getBlock(), blockSuffix, element, modifier) // law-button-test__test--test
             : ''
     const is: {
         (name: string, state: boolean | undefined): string

@@ -17,6 +17,7 @@ declare module 'vue' {
     AResult: typeof import('ant-design-vue/es')['Result']
     ASpin: typeof import('ant-design-vue/es')['Spin']
     LawAntEmpty: typeof import('law-ui/es')['LawAntEmpty']
+    LawEmpty: typeof import('law-ui/es')['LawEmpty']
     LawFlipCard: typeof import('law-ui/es')['LawFlipCard']
   }
 }

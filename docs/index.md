@@ -12,13 +12,13 @@ hero:
     actions:
         - theme: brand
           text: 开始
-          link: /start/
+          link: /0.home
         - theme: alt
           text: 组件
-          link: /components/
+          link: /1.components/0.nav
         - theme: alt
           text: Hooks
-          link: /hooks/
+          link: /2.hooks/0.nav
         - theme: alt
           text: Github
           link: https://github.com/npmrun/law-ui

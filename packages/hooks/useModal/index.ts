@@ -18,7 +18,7 @@ import { useModalContext } from "./context";
 import defineDefaultComponentInModal from "./customComponent";
 import { cloneDeep } from "@law-ui/utils";
 
-let createComponentInModal;
+let createComponentInModal = defineDefaultComponentInModal;
 export { defineDefaultComponentInModal, useModalContext };
 export function useEneModal_ChangeComponentInModal(
     fn: typeof defineDefaultComponentInModal

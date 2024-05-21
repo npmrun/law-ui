@@ -1,5 +1,6 @@
 import "./style.scss"
 import { createApp, h, Fragment } from 'vue'
+import Layout from './layout.vue'
 
 // import '@law-ui/theme-chalk/src/dark/css-vars.scss'
 // import 'ant-design-vue/dist/antd.css'
@@ -9,10 +10,10 @@ import 'ant-design-vue/lib/modal/style/index.css'
 
 import { useEneModal_ChangeComponentInModal, defineDefaultComponentInModal, ModalContainer } from 'law-ui';
 
-useEneModal_ChangeComponentInModal(defineDefaultComponentInModal)
+// useEneModal_ChangeComponentInModal(defineDefaultComponentInModal)
 
 ;(async () => {
-  const apps = import.meta.glob('./src/*.vue')
+  const apps = import.meta.glob('./src/**/*.vue')
   const name = location.pathname.replace(/^\//, '') || 'App'
   const file = apps[`./src/${name}.vue`]
   if (!file) {
@@ -21,7 +22,7 @@ useEneModal_ChangeComponentInModal(defineDefaultComponentInModal)
   }
 
   const App = (await file() as any).default
-  const app = createApp(()=>h(Fragment, {}, [h(App),h(ModalContainer)]))
+  const app = createApp(()=>h(Fragment, {}, [h(Layout, null, ()=>[h(App)]),h(ModalContainer)]))
   // app.use(antd)
   app.use(Modal)
   app.mount('#play')

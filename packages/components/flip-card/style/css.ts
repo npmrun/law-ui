@@ -1,1 +1,1 @@
-import '@law-ui/theme-chalk/law-flipcard.css'
+import '@law-ui/theme-chalk/law-flip-card.css'

@@ -12,6 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.10"
+    "vitepress": "^1.1.4"
+  },
+  "dependencies": {
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.3",
+    "defu": "^6.1.4",
+    "gray-matter": "^4.0.3"
   }
 }

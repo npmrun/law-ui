@@ -1,4 +1,4 @@
-import FlipCard from "./src/FlipCard.vue";
+import FlipCard from "./src/flip-card.vue";
 import { withInstall, withNoopInstall } from "@law-ui/utils";
 
 export type FlipCardInstance = InstanceType<typeof FlipCard>;
