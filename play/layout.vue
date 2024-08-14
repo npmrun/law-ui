@@ -39,6 +39,7 @@ const list = [
 				</template>
 			</div>
 			<h2>bem规则</h2>
+			<p><a target="_blank" href="https://juejin.cn/post/6844903672162304013#heading-1">BEM 命名规范</a></p>
 			<input v-model="value" type="text">
 			<input v-model="value2" type="text">
 			<input v-model="suffixValue" type="text"> <br>

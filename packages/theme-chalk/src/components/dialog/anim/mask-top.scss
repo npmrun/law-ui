@@ -1,0 +1,18 @@
+@use "_var" as *;
+
+.mask-top-enter-active,
+.mask-top-leave-active {
+	transition: height $masktime ease;
+}
+
+.mask-top-enter-from,
+.mask-top-leave-to {
+	height: 0;
+	top: 0;
+	bottom: auto;
+}
+
+.mask-top-enter-to,
+.mask-top-leave-from {
+	height: 100%;
+}

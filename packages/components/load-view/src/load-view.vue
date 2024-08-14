@@ -65,7 +65,7 @@
                 <div
                     style="text-align: center; padding: 8px 0; font-size: 16px"
                     :style="[
-                        emptyLayout === 'fixed'
+                        emptyLayout === 'absolute'
                             ? {
                                   position: 'absolute',
                                   left: '50%',
@@ -97,7 +97,7 @@ const props = withDefaults(
         empty?: boolean
         loadingText?: string
         errorTitle?: string
-        emptyLayout?: 'fixed' | 'inline'
+        emptyLayout?: 'absolute' | 'inline'
         errorBtnText?: string
         errorSubTitle?: string
         emptyText?: string

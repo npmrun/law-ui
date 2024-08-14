@@ -1,0 +1,60 @@
+@use "mixins/function.scss" as *;
+@import "./components/dialog/_index.scss";
+
+.dialog__wrapper {
+    position: fixed;
+    &.inbox{
+        position: absolute;
+        transform: scale(1); // 将内部的fixed降级为absolute
+    }
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+
+    .dialog__content {
+        height: fit-content;
+    }
+
+    &.playing{
+        overflow: hidden !important;
+    }
+
+    // 用定位方便一点但是无法用transform动画
+    &.center {
+        display: flex;
+        // align-items: flex-end;
+        // align-items: center; // align-items 为center溢出 后无法滚动到顶部
+        // justify-content: center;
+        overflow: auto;
+        
+        &.my{
+            padding: 40px 0;
+        }
+        .dialog__content {
+            margin: auto;
+            width: 30%;
+            // margin-top: 20vh;
+        }
+    }
+
+    &.bottom {
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+
+        > .dialog__content {
+            width: 100%;
+        }
+    }
+    &.top {
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+
+        > .dialog__content {
+            width: 100%;
+        }
+    }
+}

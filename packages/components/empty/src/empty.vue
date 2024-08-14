@@ -1,5 +1,5 @@
 <template>
-    <div class="law-empty" :class="[layoutClassName]">
+    <div :class="[ns.b(), layoutClassName]">
         <a-empty v-bind="$attrs" />
     </div>
 </template>
@@ -10,7 +10,7 @@ import { computed } from 'vue';
 
 const props = withDefaults(
     defineProps<{
-        layout?: 'fixed' | 'inline'
+        layout?: 'absolute' | 'inline'
     }>(),
     {
         layout: 'inline',

@@ -1,0 +1,11 @@
+@use "_var" as *;
+
+.mask-fade-enter-active,
+.mask-fade-leave-active {
+	transition: opacity $masktime ease;
+}
+
+.mask-fade-enter-from,
+.mask-fade-leave-to {
+	opacity: 0;
+}

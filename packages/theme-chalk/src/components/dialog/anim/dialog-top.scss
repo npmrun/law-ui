@@ -1,0 +1,14 @@
+@use "_var" as *;
+
+.dialog-top-enter-active {
+    transition: transform $dialogtime ease-in;
+}
+
+.dialog-top-leave-active {
+    transition: transform $dialogtime ease-out;
+}
+
+.dialog-top-enter-from,
+.dialog-top-leave-to {
+    transform: translateY(-100%);
+}

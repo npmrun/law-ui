@@ -1,0 +1,15 @@
+@use "_var" as *;
+
+.dialog-slide-fade-enter-active {
+    transition: opacity $dialogtime ease-out, transform $dialogtime ease-out;
+}
+
+.dialog-slide-fade-leave-active {
+    transition: opacity $dialogtime cubic-bezier(1, 0.5, 0.8, 1), transform $dialogtime cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.dialog-slide-fade-enter-from,
+.dialog-slide-fade-leave-to {
+    transform: translateY(30px);
+    opacity: 0;
+}

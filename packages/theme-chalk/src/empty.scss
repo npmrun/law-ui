@@ -1,12 +1,14 @@
-@use 'common/var.scss' as *;
+@use "mixins/function.scss" as *;
 
-$name: law-empty;
+$name: "empty";
+$name-b: bem($name);
+$name-absolute: bem($name, "", "absolute");
 
-.#{$name} {
-    &.#{$name}--fixed{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+.#{$name-b} {
+	&.#{$name-absolute} {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 }

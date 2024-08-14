@@ -1,0 +1,16 @@
+@use "_var" as *;
+
+.dialog-right-fade-enter-active {
+	transition: opacity $dialogtime ease-out, transform $dialogtime ease-in;
+}
+
+.dialog-right-fade-leave-active {
+	transition: opacity $dialogtime cubic-bezier(1, 0.5, 0.8, 1),
+		transform $dialogtime ease-out;
+}
+
+.dialog-right-fade-enter-from,
+.dialog-right-fade-leave-to {
+	transform: translateX(100%);
+	opacity: 0;
+}

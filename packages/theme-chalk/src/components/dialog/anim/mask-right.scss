@@ -1,0 +1,20 @@
+@use "_var" as *;
+
+.mask-right-enter-active,
+.mask-right-leave-active {
+	transition: width $masktime ease;
+}
+
+.mask-right-enter-from,
+.mask-right-leave-to {
+	width: 0;
+	right: 0;
+	left: auto;
+}
+
+.mask-right-enter-to,
+.mask-right-leave-from {
+	width: 100%;
+	left: auto;
+	right: 0;
+}

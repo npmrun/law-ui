@@ -1,0 +1,19 @@
+@use "mixins/function.scss" as *;
+
+$name: "mask";
+$name-b: bem($name);
+$name-inbox: bem($name, "", "inbox");
+
+.#{$name-b} {
+	position: fixed;
+	&.#{$name-inbox} {
+		position: absolute;
+		transform: scale(1);
+	}
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000062;
+	z-index: 998;
+}

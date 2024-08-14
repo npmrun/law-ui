@@ -99,7 +99,7 @@ export const useNamespace = (
         const styles: Record<string, string> = {}
         for (const key in object) {
             if (object[key]) {
-                styles[`--${namespace.value}-${block}-${key}`] = object[key] // --law-button-test: test
+                styles[`--${namespace.value}-${getBlock()}-${key}`] = object[key] // --law-button-test: test
             }
         }
         return styles
@@ -107,7 +107,7 @@ export const useNamespace = (
 
     const cssVarName = (name: string) => `--${namespace.value}-${name}` // --law-test
     const cssVarBlockName = (name: string) =>
-        `--${namespace.value}-${block}-${name}`  // --law-button-test
+        `--${namespace.value}-${getBlock()}-${name}`  // --law-button-test
 
     return {
         namespace,
