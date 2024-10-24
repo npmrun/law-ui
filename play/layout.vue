@@ -40,12 +40,14 @@ const list = [
 			</div>
 			<h2>bem规则</h2>
 			<p><a target="_blank" href="https://juejin.cn/post/6844903672162304013#heading-1">BEM 命名规范</a></p>
-			<input v-model="value" type="text">
-			<input v-model="value2" type="text">
-			<input v-model="suffixValue" type="text"> <br>
-			<input v-model="nameValue" type="text">
-			<input v-model="elementValue" type="text">
-			<input v-model="modifierValue" type="text">
+			<div>
+				<input v-model="value" type="text">
+				<input v-model="value2" type="text">
+				<input v-model="suffixValue" type="text"> <br>
+				<div>name:<input v-model="nameValue" type="text"></div>
+				<div>element：<input v-model="elementValue" type="text"></div>
+				<div>modifier: <input v-model="modifierValue" type="text"></div>
+			</div>
 			<table class="gridtable">
 				<tr>
 					<th>函数</th>

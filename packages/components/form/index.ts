@@ -8,5 +8,5 @@ export type FormItemInstance = InstanceType<typeof FormItem>
 export const LawForm = withInstall(Form, {
     FormItem
 })
-export const LawAntFormItem = withNoopInstall(FormItem)
+export const LawFormItem = withNoopInstall(FormItem)
 export default Form

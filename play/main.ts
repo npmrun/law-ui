@@ -8,7 +8,8 @@ import Layout from './layout.vue'
 import {Modal} from "ant-design-vue"
 import 'ant-design-vue/lib/modal/style/index.css'
 
-import { useEneModal_ChangeComponentInModal, defineDefaultComponentInModal, ModalContainer } from 'law-ui';
+// useEneModal_ChangeComponentInModal, defineDefaultComponentInModal, 
+import { ModalContainer } from 'law-ui';
 
 // useEneModal_ChangeComponentInModal(defineDefaultComponentInModal)
 

@@ -12,6 +12,7 @@ declare module 'vue' {
     AEmpty: typeof import('ant-design-vue/es')['Empty']
     AForm: typeof import('ant-design-vue/es')['Form']
     AFormItem: typeof import('ant-design-vue/es')['FormItem']
+    AInput: typeof import('ant-design-vue/es')['Input']
     AMenu: typeof import('ant-design-vue/es')['Menu']
     AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     AResult: typeof import('ant-design-vue/es')['Result']
@@ -19,5 +20,6 @@ declare module 'vue' {
     LawAntEmpty: typeof import('law-ui/es')['LawAntEmpty']
     LawEmpty: typeof import('law-ui/es')['LawEmpty']
     LawFlipCard: typeof import('law-ui/es')['LawFlipCard']
+    LawFormItem: typeof import('law-ui/es')['LawFormItem']
   }
 }
